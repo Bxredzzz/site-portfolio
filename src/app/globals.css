@@ -8,9 +8,13 @@
 /* Removed the @include at-rule and its associated mixin */
 
 
+:root {
+  --main-green: #040f16;
+  --second-green: #144335;
+}
 
 li {
-  margin-bottom: 10px;
+  margin-bottom: 0.774593338497289vh;
 }
 
 
@@ -31,11 +35,7 @@ li {
   text-align: left;
   color: rgb(255, 255, 255);
   font-weight: 300;
-  margin-bottom: 20px;
-
-  @include breakpoint(baby-bear) {
-    width: 100%;
-  }
+  margin-bottom: 1.549186676994578vh;
 
   &:nth-child(3) {
     padding-right: 8%;
@@ -46,12 +46,12 @@ li {
     text-align: left;
     text-transform: uppercase;
     font-size: 1.2em;
-    margin-bottom: 20px;
+    margin-bottom: 1.549186676994578vh;
     font-weight: 400;
   }
 
   .skill-percentage {
-    margin-bottom: 10px;
+    margin-bottom: 0.774593338497289vh;
     position: relative;
 
     &::after {
@@ -60,7 +60,7 @@ li {
       height: 6px;
       background: #f5f5f5;
       display: block;
-      margin-top: 3px;
+      margin-top: 0.23237800154918667vh;
     }
 
     &::before {
@@ -68,131 +68,66 @@ li {
       height: 6px;
       background: lawngreen;
       position: absolute;
-      margin-top: 3px;
+      margin-top: 0.23237800154918667vh;
       bottom: 0;
     }
 
     &:nth-child(1)::before {
       width: 35%;
-      animation: skill_1 0.6 ease;
+      ;
     }
 
     &:nth-child(2)::before {
       width: 40%;
-      animation: skill_2 0.6 ease;
+
     }
 
     &:nth-child(3)::before {
       width: 50%;
-      animation: skill_3 0.6 ease;
+
     }
 
     &:nth-child(4)::before {
       width: 60%;
-      animation: skill_4 0.6 ease;
+
     }
 
     &:nth-child(5)::before {
       width: 90%;
-      animation: skill_5 0.6 ease;
+
     }
 
     &:nth-child(6)::before {
       width: 25%;
-      animation: skill_6 0.6 ease;
+
     }
 
     &:nth-child(7)::before {
       width: 60%;
-      animation: skill_6 0.6 ease;
+
     }
 
     &:nth-child(8)::before {
       width: 25%;
-      animation: skill_6 0.6 ease;
+
     }
 
     &:nth-child(9)::before {
       width: 85%;
-      animation: skill_6 0.6 ease;
+
     }
 
     &:nth-child(10)::before {
       width: 45%;
-      animation: skill_6 0.6 ease;
+
+    }
+
+    &:nth-child(11)::before {
+      width: 70%;
+
     }
   }
 
-}
-
-@keyframes skill_1 {
-  from {
-    width: 0%;
-  }
-
-  to {
-    width: 80%;
-  }
-}
-
-@keyframes skill_2 {
-  from {
-    width: 0%;
-  }
-
-  to {
-    width: 90%;
-  }
-}
-
-@keyframes skill_3 {
-  from {
-    width: 0%;
-  }
-
-  to {
-    width: 50%;
-  }
-}
-
-@keyframes skill_4 {
-  from {
-    width: 0%;
-  }
-
-  to {
-    width: 60%;
-  }
-}
-
-@keyframes skill_5 {
-  from {
-    width: 0%;
-  }
-
-  to {
-    width: 70%;
-  }
-}
-
-@keyframes skill_6 {
-  from {
-    width: 0%;
-  }
-
-  to {
-    width: 70%;
-  }
-}
-
-@keyframes skill_7 {
-  from {
-    width: 0%;
-  }
-
-  to {
-    width: 70%;
-  }
 }
 
 .font-mono {
@@ -268,8 +203,8 @@ li {
 }
 
 .menuButton {
-  margin-right: 10px;
-  padding: 10px 20px;
+  margin-right: 0.774593338497289vh;
+  padding: 0.774593338497289vh 1.549186676994578vh;
   font-size: 16px;
 }
 
@@ -278,14 +213,12 @@ li {
   align-items: center;
 }
 
-/* Styles pour les boutons du menu */
 .button {
-  margin-left: 10px;
-  padding: 10px 20px;
+  margin-left: 0.774593338497289vh;
+  padding: 0.774593338497289vh 1.549186676994578vh;
   font-size: 14px;
   opacity: 1;
   position: relative;
-  /* Nécessaire pour la surbrillance */
 }
 
 
@@ -296,28 +229,24 @@ li {
 
 }
 
-/* Nouvelle classe pour la surbrillance verte */
 .button::after {
   content: '';
   position: absolute;
   left: 0;
   bottom: -5px;
-  /* Ajuster la distance en dessous du bouton */
   width: 100%;
   height: 2px;
   background-color: transparent;
-  /* Initialement transparent */
   transition: background-color 0.3s ease-in-out;
-  /* Transition pour la surbrillance */
 }
 
 .button:hover::after {
   background-color: rgb(84, 235, 84);
-  /* Couleur de la surbrillance verte */
 }
 
 
 .titreContainer {
+  margin-top: 1vh;
   display: inline-grid;
   text-align: center;
   width: fit-content;
@@ -325,7 +254,8 @@ li {
 }
 
 .titre {
-  font-size: 100px;
+  
+  font-size: 7vh;
   font-weight: 600;
   text-align: center;
   color: #f5f5f5;
@@ -359,6 +289,9 @@ li {
 .body {
   display: block;
   -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .allpage {
@@ -373,37 +306,39 @@ li {
 .texteContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   margin-top: 10vh;
   color: #f5f5f5;
-  font-size: 40px;
+  font-size: 2vh;
   font-weight: 600;
+  align-items: center;
+
 }
 
 .texteContainer2 {
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   color: #f5f5f5;
-  font-size: 40px;
+  font-size: 2vh;
   font-weight: 600;
+
 }
 
 .texteContainer3 {
   display: block;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   margin-top: 10vh;
   color: #f5f5f5;
-  font-size: 40px;
+  font-size: 2vh;
   font-weight: 600;
-  border-radius: 16px;
-  background: #144335;
-  box-shadow: 5px 5px 0px #144234,
-    -5px -5px 0px #144436;
+  border-radius: 62px;
+  background: linear-gradient(145deg, #0c4033, #0a362b);
+  box-shadow: 5px 5px 11px #041813,
+    -5px -5px 11px #12604d;
+
 }
 
 .texteContainer4 {
@@ -413,52 +348,55 @@ li {
   justify-content: center;
   margin-top: 10vh;
   color: #f5f5f5;
-  font-size: 40px;
+  font-size: 2vh;
   font-weight: 600;
-  border-radius: 16px;
-  background: #144335;
-  box-shadow: 5px 5px 0px #144234,
-    -5px -5px 0px #144436;
+  border-radius: 62px;
+  background: linear-gradient(145deg, #0c4033, #0a362b);
+  box-shadow: 5px 5px 11px #041813,
+    -5px -5px 11px #12604d;
 }
+
 .text2 {
   display: block;
   font-size: 60px;
-  margin-top: 5vh;
+  margin-top: 1vh;
   color: #f5f5f5;
-  font-size: 30px;
+  font-size: 1.5vh;
   font-weight: 100;
-  padding: 0.5cm;
+  padding-left: 2vw;
+  padding-bottom: 2vw;
+
 }
 
-/* Fixed header */
 .fixedHeader {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: #040f16;
-  /* Même couleur que le fond */
   z-index: 1000;
-  padding: 10px 0;
-  /* Ajout de padding pour un espacement interne */
+  padding: 0.774593338497289vh 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  /* Ombre pour distinction */
+  
 }
 
 .outer-frame {
   border: 1px solid var(--color-gray-dark-3);
   border-radius: 5px;
+  padding: 1rem;
 }
 
 .favor-list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   align-content: center;
-  margin-right: 4cm;
+  list-style: none; 
+  padding: 0;
+  margin: 0;
 }
 
-.favor-list>li {
+.favor-list > li {
   display: flex;
   flex: 1 0 0;
   align-items: center;
@@ -469,34 +407,29 @@ li {
   padding-left: 3rem;
   padding-right: 3rem;
   transition: all 0.3s;
+  text-align: center; 
 }
 
-.favor-list>li>i {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 40px;
-  width: 50px;
-  height: 50px;
-}
-
-.favor-list>li:hover {
+.favor-list > li:hover {
   transform: scale(1.2);
   color: var(--color-tiffany);
 }
 
-.favor-list>li>span {
+.favor-list > li > span {
   letter-spacing: 1px;
 }
 
-/* Detail section overall setting*/
+
+
+
+/* Autres styles existants */
 .detail {
   flex: 1 0 0;
   background-color: white;
   padding: 2rem;
 }
 
-.detail:hover>.detail-section:not(:hover) {
+.detail:hover > .detail-section:not(:hover) {
   opacity: 0.3;
 }
 
@@ -513,23 +446,169 @@ li {
   align-items: center;
 }
 
-.detail-section>.detail-content {
+.detail-section > .detail-content {
   padding: 1.5rem;
   padding-left: 2rem;
   user-select: none;
 }
 
-.detail-section.edu>.detail-content {
+.detail-section.edu > .detail-content {
   padding-left: calc(1.5rem + 10px);
 }
 
 .border {
-  border-radius: 50px;
+  border-radius: 3.8729666924864445vh;
   background: #040f16;
-  box-shadow: 10px 10px 30px #262c30,
-    -10px -10px 30px #262c30;
+  box-shadow: 0.774593338497289vh 0.774593338497289vh 32.3237800154918666vh #262c30,
+  -0.774593338497289vh -0.774593338497289vh 2.3237800154918666vh #262c30;
 }
 
 html {
   scroll-behavior: smooth;
 }
+
+.flex {
+  flex-direction: column;
+  align-items: center;
+}
+
+.left, .right {
+  text-align: center;
+  width: 100%;
+}
+
+
+@media (max-width: 1200px) {
+  .favor-list {
+    flex-direction: column;
+  }
+
+  .favor-list > li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .texteContainer {
+    font-size: 30px;
+  }
+  .texteContainer3 {
+    font-size: 30px;
+  }
+  .texteContainer4 {
+    font-size: 30px;
+  }
+  .texteContainer {
+    font-size: 20px;
+  }
+  .titre {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  .titre {
+    font-size: 30px;
+  }
+  .titreContainer {
+    margin-top: 6vh;
+  }
+  .btn .icon {
+    height: 20px;
+    width: 40px;
+  }
+  .btn {
+    width: 45px;
+    height: 30px;
+    font-size: 10px;
+  }
+  .button {
+    padding: 0.5rem;
+    font-size: 12px;
+  }
+  .btn .text {
+    font-size: 9px;
+    transform: translateX(25px);
+  }
+  .btn:active .icon {
+    transform: scale(0.2);
+  }
+  .btn:hover .icon {
+    width: 50px;
+  }
+  .btn {
+    width: 45px;
+    height: 30px;
+    font-size: 10px;
+  }
+  .buttonContainer {
+    padding-left: 2rem;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .texteContainer3 {
+    font-size: 20px;
+  }
+
+  .texteContainer4 {
+    font-size: 20px;
+  }
+  .titre {
+    font-size: 20px;
+  }
+  .favor-list > li {
+    padding: 1rem;
+  }
+  .favor-list > li {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .btn .icon {
+    height: 20px;
+    width: 40px;
+  }
+  .btn {
+    width: 45px;
+    height: 30px;
+    font-size: 10px;
+  }
+  .button {
+    padding: 0.5rem;
+    font-size: 10px;
+  }
+  .btn .text {
+    font-size: 8px;
+    transform: translateX(25px);
+  }
+  .btn:active .icon {
+    transform: scale(0.2);
+  }
+  .btn:hover .icon {
+    width: 50px;
+  }
+  .btn {
+    width: 45px;
+    height: 30px;
+    font-size: 10px;
+  }
+  .buttonContainer {
+    padding-left: 1rem;
+    font-size: 10px;
+  }
+  .text2 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .titreContainer {
+    margin-top: 9vh;
+  }
+}
+
+

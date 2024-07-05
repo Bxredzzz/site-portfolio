@@ -14,30 +14,37 @@ export default function Home() {
           <div className="body-b">
             <Titre />
             <div className="texteContainer3">
-              <h1 id="Pr"> Présentation : </h1>
+              <div className="gradient">
+              <h1 id="Pr" className="pl-8 pt-5"> Présentation : </h1>
               <p className="text2">
                 Je m&apos;appelle Axel Treinsoutrot, j&apos;ai 21 ans et je suis actuellement en dernière année de licence à l&apos;université Paul Sabatier et je souhaite rentrer à Ynov en master 1 Expert en développement web tout en réalisant une alternance. Ma formation à l&apos;université m&apos;a donné de grandes capacités d&apos;apprentissage des technologies informatiques et d&apos;autonomies je développe en auto formation en plus de ma licence mes compétences en web.
               </p>
+              </div>
             </div>
             <div className="texteContainer">
-              <h1 className="pb-8"> Compétences & Qualités: </h1>
+              <h1 id = "c" className="pb-8"> Compétences :</h1>
             </div>
-            <div id="c" className="texteContainer2">
-              <div className="basis-full"><Skill /></div>
-              <div className="basis-1/4"><Qualite /></div>
+            <div  className="texteContainer2">
+              <Skill />
             </div>
-            <div className="texteContainer3">
-              <h1> Mon rapport avec le développement : </h1>
+            <div className="texteContainer">
+              <h1 className="pb-8"> Qualités :</h1>
+            </div>
+            <div id="q" className="texteContainer2">
+              <Qualite />
+            </div>
+            <div className="texteContainer3 gradient">
+              <h1 className="pl-8 pt-5"> Mon rapport avec le développement : </h1>
               <p className="text2">
                 J&apos;ai commencé à coder à l&apos;âge de 14 ans ça a toujours été une passion pour moi et avec mes années de fac j&apos;ai acquis une rigueur sur la qualité du travail que je devais effectuer de plus je suis devenue plus compétitif avec cette envie persistante de toujours faire mieux.
               </p>
             </div>
-            <div className="texteContainer">
+            <div className="texteContainer gradient">
               <h1> Merci d&apos;avoir regardé mon site ! </h1>
               <p className="text2 pb-7">(il a été réalisé en Next JS et entièrement par moi)</p>
             </div>
-            <div className="texteContainer4">
-              <h1 id="cv" className="pb-5"> Voici mon CV en format PDF :</h1>
+            <div className="texteContainer4 ">
+              <h1 id="cv" className="pb-5 pt-5"> Voici mon CV en format PDF :</h1>
               <a
                 href="/Cv_Axel_Treinsoutrot_Ynov.pdf"
                 target="_blank"

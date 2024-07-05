@@ -28,7 +28,8 @@ export default function Menu() {
                 {showButtons && (
                     <>
                         <a href="#root" className="button "><h1 className='textMenu'>Présentation</h1></a>
-                        < a href="#c" className="button "><h1 className='textMenu'>Compétences&Qualités</h1></a>
+                        < a href="#c" className="button "><h1 className='textMenu'>Compétences</h1></a>
+                        < a href="#q" className="button "><h1 className='textMenu'>Qualités</h1></a>
                         < a href="#cv" className="button "><h1 className='textMenu'>CV</h1></a>
                     </>
                 )}

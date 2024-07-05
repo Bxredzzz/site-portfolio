@@ -16,6 +16,7 @@ export default function skill(this: any) {
                 <li className="skill-percentage">JavaSwing</li>
                 <li className="skill-percentage">Python</li>
                 <li className="skill-percentage">Ocaml</li>
+                <li className="skill-percentage">Anglais</li>
             </ul>
         </div>);
 
